@@ -9,16 +9,20 @@ const inputAddress = document.querySelector('#address');
 const inputTime = document.querySelector('#time');
 const inputPay = document.querySelector('#option-pay');
 const btnRemoveOrder = document.querySelector('.button__remove-order button');
+const activeBill = document.querySelector('.active__bill');
+const closeActiveBill1 = document.querySelector('.icon__close-bill');
+const closeActiveBill2 = document.querySelector('.close__bill');
+const seenBill = document.querySelector('.seen__bill');
 
 let dataOrder;
 let dataUser = [];
 let ID__BILL = 0;
-inputs.forEach((input, index) => {
 
+
+inputs.forEach((input, index) => {
     input.onblur = () => {
         handleInput(input);
     }
-
 });
 
 btnSubmit.addEventListener("click", (e) => {
@@ -35,12 +39,29 @@ btnSubmit.addEventListener("click", (e) => {
     dataUser.push(dataOutput);
     form.style.display = 'none';
     document.body.style.overflow = 'auto';
+    activeBill.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    showCart.classList.remove('active');
     getCartNotNull();
     resetForm();
-
     resetOrder()
     console.log(dataUser);
 })
+
+closeActiveBill1.addEventListener('click', handleCloseActiveBill);
+closeActiveBill2.addEventListener('click', handleCloseActiveBill);
+
+seenBill.addEventListener('click', handleSeenBill);
+
+function handleSeenBill() {
+    handleCloseActiveBill();
+    openHistoryOrder();    
+}
+
+function handleCloseActiveBill() {
+    activeBill.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
 function getCartNotNull() {
     dataOrder = listCartData.map((item) => {
@@ -201,8 +222,6 @@ function resetOrder() {
                         </div>`
             document.querySelector('.list__cart-order').appendChild(newItemCart);
         })
-        btnRemoveOrder.addEventListener('click', () => {
-            listBillOrder.removeChild(newLi);
-        })
+
     })
 }
