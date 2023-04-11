@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="header__container">
+                <img src="/img/coffee_image1.jpg" alt="" class="header__banner">
+                <div class="header__navbar">
+                    <div class="grid wide">
+                        <div class="header__navbar-container">
+                            <div class="list__header-navbar">
+                                <div class="row">
+                                    <div class="item__navbar-left col l-1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="item__navbar-center col l-9">
+                                        <div class="row">
+                                            <div class="item__navbar-content active"><a href="#header">Trang Chủ</a>
+                                            </div>
+                                            <div class="item__navbar-content"><a href="#menu__drink">Thực đơn</a></div>
+                                            <div class="item__navbar-content item__navbar-logo"><a href="#header">
+                                                    <img src="/img/Exclude.png" alt="langthang logo" class="logo__page">
+                                                </a></div>
+                                            <div class="item__navbar-content"><a href="#user">Ưu Đãi</a></div>
+                                            <div class="item__navbar-content"><a href="#author"> Về chúng tôi</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="item__navbar-right col l-1">
+                                        <div class="icon__shop-header">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <span class="quatity__cart">0</span>
+                                        </div>
+                                    </div>
+                                    <div class="user__login col l-1">
+                                        <div class="user__login-img">
+                                            <img src="/img/author/Rectangle55.jpg" alt="">
+                                        </div>
+
+                                        <div class="user__option-login">
+                                            <div class="user__content">
+                                                <div class="user__content-name">Nguyễn Minh Trí</div>
+                                                <div class="user__content-id">ID : #12512</div>
+                                            </div>
+                                            <div class="user__list-option">
+                                                <div class="user__item-option active">TRANG CHỦ</div>
+                                                <div class="user__item-option user__item-option-cart">GIỎ HÀNG</div>
+                                                <div class="user__item-option" onclick="openHistoryOrder()">ĐƠN HÀNG</div>
+                                                <div class="user__item-option">VOUCHER</div>
+                                                <div class="user__item-option">CÀI ĐẶT</div>
+                                                <div class="user__item-option">ĐĂNG XUẤT</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__content">
+                    <div class="grid wide">
+                        <div class="header__content-container col l-8">
+                            <div class="header__content-subtitle">
+                                <h3>#Welcome To</h3>
+                            </div>
+                            <div class="header__content-title">
+                                <h1>the langthang </br> coffee house</h1>
+                            </div>
+                            <div class="header__content-decs">Không chỉ là cà phê, chúng tôi bán cả sử trải nghiệm</div>
+                        </div>
+                        <div class="header__content-btn">
+                            <div class="button"><span class="content__button">Đặt hàng</span></div>
+                            <div class="button button--transparent">
+                                <span class="content__button">Xem video giới thiệu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="space__shop-section">
+                <div class="space__shop-container">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="space__shop-content col l-6 animate-item animate-item__left">
+                                <div class="space__shop-content-title">về không gian</div>
+                                <div class="space__shop-content-decs">
+                                    Không gian của LANGTHANG COFFEE được thiết kế với tông màu vàng ấm áp và thoải mái.
+                                    Đồ
+                                    nội thất được bố trí thông minh và tinh tế để mang lại sự thoải mái cho khách hàng.
+                                    Bức
+                                    tranh nghệ thuật treo trên tường cùng với đèn lồng pha lê tạo ra một không gian sang
+                                    trọng và quyến rũ. Bạn có thể ngồi ở các góc ngồi riêng tư hoặc các bàn đơn tùy theo
+                                    sở
+                                    thích của mình. LANGTHANG COFFEE sẽ là một nơi lý tưởng để bạn tìm kiếm sự yên bình
+                                    và
+                                    thư giãn.
+                                </div>
+                            </div>
+                            <div class="space__shop-img col l-6 animate-item animate-item__right">
+                                <div class="box__img">
+                                    <img src="/img/space_shop/Rectangle46.png" alt="" class="img__space active">
+                                    <img src="/img/space_shop/Rectangle47.png" alt="" class="img__space">
+                                    <img src="/img/space_shop/Rectangle48.jpg" alt="" class="img__space">
+                                    <img src="/img/space_shop/Rectangle49.jpg" alt="" class="img__space">
+                                    <img src="/img/space_shop/Rectangle50.jpg" alt="" class="img__space">
+                                </div>
+                                <div class="icon__next" onclick="next()"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="icon__prev" onclick="prev()"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="list__dot">
+                                    <div class="item__dot"></div>
+                                    <div class="item__dot"></div>
+                                    <div class="item__dot"></div>
+                                    <div class="item__dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="best-seller__section">
+                <div class="best__seller-container">
+                    <ul class="list__best-seller">
+                        <li class="item__best-seller">
+                            <div class="hero-banner__title" aria-hidden="true">Best seller #1 </br> cà phê sữa</div>
+                            <img src="./img/drink_menu/cafe2.png" alt="ca phe sua" class="img__item-best-seller">
+                            <h1 class="hero-banner__title hero-banner__stroked-title">Best seller #1 </br> cà phê sữa
+                            </h1>
+                        </li>
+
+                        <button class="button button__best-seller">Trải nghiệm ngay <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                        <div class="title__item-best-seller" data-title="Best seller #1
+    cà phê sữa"></div>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="menu__drink-section" id="menu__drink">
+                <div class="grid wide">
+                    <div class="menu__drink-container col l-12">
+                        <div class="menu__drink-title title animate-item animate-item__left">Có gì trong thực đơn ?
+                        </div>
+                        <div class="menu__drink-options col l-12">
+                            <ul class="list__option-menu ">
+                                <div class="row">
+                                    <li class="option__menu-item active animate-item animate-item__left">Cà phê</li>
+                                    <li class="option__menu-item animate-item animate-item__top">Trà sữa</li>
+                                    <li class="option__menu-item animate-item animate-item__right">Soda</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="menu__drinks animate-item animate-item__left">
+                            <ul class="box__list list__drink list__drink-coffee active">
+
+                            </ul>
+
+                            <ul class="box__list list__drink list__drink-milkTea">
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="box__list list__drink list__drink-soda">
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="box__item drink__item">
+                                    <div class="box__item-img drink__item-img">
+                                        <img srcset="/img/drink_menu/cafe1.png 2x" alt="" class="img-drink">
+                                    </div>
+                                    <div class="box__item-content drink__item-content">
+                                        <div class="box__item-info drink__item-info">
+                                            <div class="item__content-name drink__content-name">Cà Phê Đen</div>
+                                            <div class="item__content-price drink__content-price">25.000 VNĐ</div>
+                                        </div>
+                                        <div class="box__item-like drink__item-like">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="box__item-btn drink__item-btn">
+                                        <button class="button button-add">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="combo-section">
+                <div class="grid wide">
+                    <div class="combo__container">
+                        <div class="combo__container-title title animate-item animate-item__top">
+                            <h1>cùng với những ưu đãi</h1>
+                        </div>
+                        <div class="combo__list col l-12">
+                            <div class="combo__item combo1 col l-12">
+                                <div class="row">
+                                    <div class="combo__item-img col l-5 animate-item animate-item__left"><img
+                                            srcset="/img/combo/Rectangle132.png 2x" alt="">
+                                    </div>
+                                    <div class="combo__item-content col l-7 animate-item animate-item__right">
+                                        <div class="combo__item-content-title">
+                                            <h3>ưu đãi #1</h3>
+                                        </div>
+                                        <div class="combo__item-decs">
+                                            <p>Sự kết hợp giữa Cappuccino và bánh bông lan nhân khô nho là một cách
+                                                tuyệt vời để kết hợp hương vị ngọt ngào và tươi mát. Cappucino thơm ngon
+                                                và mát lạnh sẽ làm dịu cơn khát vào những ngày nóng bức. Bánh bông lan
+                                                nhân khô nho sẽ tạo ra một vị ngọt dịu, cùng với vị giòn của bánh, mang
+                                                lại trải nghiệm thưởng thức đầy tuyệt vời. Hãy đến LangThang Coffee của
+                                                chúng tôi để thưởng thức Ưu Đãi này ngay hôm nay!</p>
+                                        </div>
+
+                                        <div class="button button--transparent-best">
+                                            Cùng trải nghiệm ngay <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo__item combo2 col l-12">
+                                <div class="row">
+                                    <div class="combo__item-content col l-7 animate-item animate-item__left">
+                                        <div class="combo__item-content-title">
+                                            <h3>ưu đãi #2</h3>
+                                        </div>
+                                        <div class="combo__item-decs">
+                                            <p>Sự kết hợp giữa Cappuccino và bánh bông lan nhân khô nho là một cách
+                                                tuyệt vời để kết hợp hương vị ngọt ngào và tươi mát. Cappucino thơm ngon
+                                                và mát lạnh sẽ làm dịu cơn khát vào những ngày nóng bức. Bánh bông lan
+                                                nhân khô nho sẽ tạo ra một vị ngọt dịu, cùng với vị giòn của bánh, mang
+                                                lại trải nghiệm thưởng thức đầy tuyệt vời. Hãy đến LangThang Coffee của
+                                                chúng tôi để thưởng thức Ưu Đãi này ngay hôm nay!</p>
+                                        </div>
+
+                                        <div class="button button--transparent-best">
+                                            Cùng trải nghiệm ngay <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="combo__item-img col l-5 animate-item animate-item__right"><img
+                                            srcset="/img/combo/Rectangle133.png 2x" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu__cake-section">
+                <div class="grid wide">
+                    <div class="menu__cake-container">
+                        <div class="menu__cake-container-title title animate-item animate-item__top">bánh ngọt. <br> sao
+                            lại không ?</div>
+                        <ul class="box__list list__cake animate-item animate-item__left">
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantage-section">
+                <div class="grid wide">
+                    <div class="advantage__container">
+                        <div class="adventage__container-title title animate-item animate-item__left">Vì sao chúng tôi
+                            là nơi lí tưởng <br> dành cho bạn
+                            ?</div>
+                        <div class="list__adventage">
+                            <div class="item__adventage animate-item animate-item__right">
+                                <div class="item__adventage-img">
+                                    <img srcset="/img/img__advantage/coffee_advantage.jpg 2x" alt=""
+                                        class="img__adventage">
+                                </div>
+                                <div class="item__adventage-content">
+                                    <div class="adventage__content-title">Về cà phê</div>
+                                    <div class="adventage__content-decs">Cà phê tại quán của chúng tôi được pha chế từ
+                                        những hạt cà phê chọn lọc kỹ càng và rang theo phương pháp truyền thống để đảm
+                                        bảo hương vị đặc trưng và chất lượng tuyệt vời. Đến với quán cà phê của chúng
+                                        tôi, bạn sẽ được thưởng thức một tách cà phê đậm đà và thơm ngon nhất.</div>
+                                </div>
+                            </div>
+
+                            <div class="item__adventage animate-item animate-item__left">
+                                <div class="item__adventage-img">
+                                    <img srcset="\img\space_shop\Rectangle48.jpg 2x" alt="" class="img__adventage">
+                                </div>
+                                <div class="item__adventage-content">
+                                    <div class="adventage__content-title">Về môi trường</div>
+                                    <div class="adventage__content-decs">Quán của chúng tôi có không gian ấm cúng và
+                                        thiết kế sang trọng, tạo ra một môi trường thư giãn và đầy cảm hứng cho khách
+                                        hàng. Bạn sẽ có cơ hội thưởng thức cà phê tuyệt vời trong một không gian thoải
+                                        mái và đầy hứng khởi. Hãy ghé thăm quán của chúng tôi để tận hưởng không gian
+                                        đẹp và thoải mái nhất.</div>
+                                </div>
+                            </div>
+
+                            <div class="item__adventage animate-item animate-item__right">
+                                <div class="item__adventage-img">
+                                    <img srcset="/img/img__advantage/ship_advantage.jpg 2x" alt=""
+                                        class="img__adventage">
+                                </div>
+                                <div class="item__adventage-content">
+                                    <div class="adventage__content-title">về giao hàng</div>
+                                    <div class="adventage__content-decs">Quán của chúng tôi có không gian ấm cúng và
+                                        thiết kế sang trọng, tạo ra một môi trường thư giãn và đầy cảm hứng cho khách
+                                        hàng. Bạn sẽ có cơ hội thưởng thức cà phê tuyệt vời trong một không gian thoải
+                                        mái và đầy hứng khởi. Hãy ghé thăm quán của chúng tôi để tận hưởng không gian
+                                        đẹp và thoải mái nhất.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="user-section" id="user">
+                <div class="grid wide">
+                    <div class="user__container">
+                        <div class="user__container-content col l-6 animate-item animate-item__left">
+                            <div class="user__content-title">ƯU DÃI DÀNH RIÊNG <br>
+                                CHO KHÁCH HÀNG QUA WEBSITE</div>
+                            <div class="user__content-decs">Chúng tôi rất cảm kích sự quan tâm của bạn đến LangThang
+                                Coffee House và mong muốn có cơ hội chào đón bạn tới thưởng thức các loại nước uống và
+                                bánh ngọt tuyệt vời của chúng tôi. Hãy để lại thông tin của bạn để nhận ngay ưu đãi đặc
+                                biệt của chúng tôi - giảm ngay 30% trên tổng hóa đơn khi mua nước và bánh tại cửa hàng.
+                                Bằng cách đăng ký, bạn sẽ trở thành một phần của cộng đồng LangThang và được cập nhật về
+                                những sự kiện và ưu đãi đặc biệt sớm nhất. Chúng tôi cam kết bảo mật thông tin của bạn
+                                và chỉ sử dụng để gửi cho bạn các ưu đãi và tin tức mới nhất từ LangThang Coffee House.
+                                Một lần nữa, chúng tôi rất trân trọng sự quan tâm của bạn và hy vọng được đón tiếp bạn
+                                tại LangThang Coffee House sớm nhất!</div>
+                        </div>
+                        <div class="user__content-form col l-6 animate-item animate-item__top">
+                            <div class="user__form-title">THÔNG TIN</div>
+                            <input type="text" placeholder="Họ tên khách hàng">
+                            <input type="email" placeholder="Email khách hàng">
+                            <input type="text" placeholder="Lời nhắn khách hàng">
+                            <button class="button button__send">Gửi</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="author-section" id="author">
+                <div class="grid wide">
+                    <div class="author__container">
+                        <div class="author__container-title title animate-item animate-item__left">và chúng tôi</div>
+                        <div class="list__author">
+                            <div class="item__author">
+                                <div class="item__author-content">
+                                    <div class="item__author-img"><img srcset="/img/author/Rectangle55.jpg 2x" alt="">
+                                    </div>
+                                    <div class="item__author-info">
+                                        <div class="author__info-name">Nguyễn Minh Trí</div>
+                                        <div class="author__info-job">Maneger</div>
+                                    </div>
+                                    <div class="item__author-contact">
+                                        <div class="contact contact-1"><i class="fa-brands fa-facebook"></i></div>
+                                        <div class="contact contact-2"><i class="fa-brands fa-instagram"></i></div>
+                                        <div class="contact contact-3"><i class="fa-brands fa-github"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__author">
+                                <div class="item__author-content">
+                                    <div class="item__author-img"><img srcset="/img/author/Rectangle58.jpg 2x" alt="">
+                                    </div>
+                                    <div class="item__author-info">
+                                        <div class="author__info-name">Nguyễn Minh Trí</div>
+                                        <div class="author__info-job">Maneger</div>
+                                    </div>
+                                    <div class="item__author-contact">
+                                        <div class="contact contact-1"><i class="fa-brands fa-facebook"></i></div>
+                                        <div class="contact contact-2"><i class="fa-brands fa-instagram"></i></div>
+                                        <div class="contact contact-3"><i class="fa-brands fa-github"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__author">
+                                <div class="item__author-content">
+                                    <div class="item__author-img"><img srcset="/img/author/Rectangle57.jpg 2x" alt="">
+                                    </div>
+                                    <div class="item__author-info">
+                                        <div class="author__info-name">Nguyễn Minh Trí</div>
+                                        <div class="author__info-job">Maneger</div>
+                                    </div>
+                                    <div class="item__author-contact">
+                                        <div class="contact contact-1"><i class="fa-brands fa-facebook"></i></div>
+                                        <div class="contact contact-2"><i class="fa-brands fa-instagram"></i></div>
+                                        <div class="contact contact-3"><i class="fa-brands fa-github"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slogan-section">
+                <div class="grid wide">
+                    <div class="slogan__container">
+                        <div class="slogan__container-img animate-item animate-item__top"><img
+                                srcset="/img/Exclude.png 1x" alt=""></div>
+                        <div class="slogan__container-text animate-item animate-item__top">“Bởi vì chúng tôi có thể.”
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="cart">
+            <div class="cart__header">
+                <div class="button__back">
+                    <i class="fa-solid fa-arrow-left"></i> Quay lại
+                </div>
+
+                <div class="cart__title">
+                    Giỏ hàng
+                </div>
+
+                <div class="cart__quanlity">
+                    SL : <span class="quanlity">0</span>
+                </div>
+            </div>
+            <div class="cart__container">
+                <div class="cart_body">
+
+                    <div class="list__cart">
+
+                    </div>
+                </div>
+                <div class="cart__footer">
+                    <div class="cart__sub-total">
+                        <div class="sub__total-bill">
+                            <span class="title__total-bill">Tổng hóa đơn : </span>
+                            <span class="content__total-bill">0 VNĐ</span>
+                        </div>
+                        <div class="sub__total-ship">
+                            <span class="title__total-ship">Phí giao hàng : </span>
+                            <span class="content__total-ship">15,000 VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="cart__total">
+                        <span class="cart__total-title">
+                            Tổng tiền :
+                        </span>
+
+                        <span class="cart__total-content">
+                            0 VNĐ
+                        </span>
+                    </div>
+
+                    <button class="button__buy">
+                        xác nhận thanh toán
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="grid wide">
+                <div class="container">
+                    <div class="footer__container">
+                        <ul class="list__info-footer">
+                            <li class="info__footer">
+                                <div class="info__footer-title">
+                                    Thông tin liên hệ
+                                </div>
+
+                                <div class="info__footer-content">
+                                    <div class="info__footer-content-location">
+                                        <h5 class="location__name">
+                                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> hồ chí minh
+                                        </h5>
+                                        <p class="location__decs">
+                                            391A Đ. Nam Kỳ Khởi Nghĩa, Phường 14, Quận 3
+                                        </p>
+                                    </div>
+
+                                    <div class="info__footer-content-gmail">
+                                        <h5 class="gmail-name">
+                                            <i class="fa-regular fa-envelope" style="color: #ffffff;"></i> gmail
+                                        </h5>
+
+                                        <p class="gmail-decs">
+                                            Thelangthang96@gmail.com
+                                        </p>
+                                    </div>
+
+                                    <ul class="list__icon-contact">
+                                        <li class="icon__contact">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </li>
+
+                                        <li class="icon__contact">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </li>
+
+                                        <li class="icon__contact">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="info__footer">
+                                <div class="info__footer-title">
+                                    Sản phẩm
+                                </div>
+
+                                <div class="info__footer-content">
+                                    <ul class="list__info">
+                                        <li class="item__info">
+                                            cà phê
+                                        </li>
+                                        <li class="item__info">
+                                            sữa tươi
+                                        </li>
+                                        <li class="item__info">
+                                            trà sữa
+                                        </li>
+                                        <li class="item__info">
+                                            soda
+                                        </li>
+                                        <li class="item__info">
+                                            bánh ngọt
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="info__footer">
+                                <div class="info__footer-title">
+                                    Giúp đỡ
+                                </div>
+
+                                <div class="info__footer-content">
+                                    <ul class="list__info">
+                                        <li class="item__info">
+                                            tìm kiếm
+                                        </li>
+                                        <li class="item__info">
+                                            giới thiệu
+                                        </li>
+                                        <li class="item__info">
+                                            tuyển dụng
+                                        </li>
+                                        <li class="item__info">
+                                            soda
+                                        </li>
+                                        <li class="item__info">
+                                            bánh ngọt
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="info__footer">
+                                <div class="info__footer-title">
+                                    Sản phẩm
+                                </div>
+
+                                <div class="info__footer-content">
+                                    <ul class="list__info">
+                                        <li class="item__info">
+                                            đăng kí nhận khuyến <br> mãi
+                                        </li>
+                                        <li class="item__info">
+                                            <input type="email" placeholder="Nhập email">
+                                            <button class="button-seen">gửi</button>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="line__footer">
+            2023 Copyright © TheLangThang. All rights reserved
+        </div>
+
+        <div class="blur">
+            <div class="main">
+                <form action="" method="POST" class="form" id="form-1">
+                    <div class="icon__close-form">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h3 class="heading">Xác nhận đơn hàng</h3>
+                    <p class="desc">Hãy điền toàn bộ thông tin <br>
+                        để chúng tôi có thể hộ trợ bạn tốt nhất ❤️</p>
+
+                    <div class="spacer"></div>
+
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Tên đầy đủ</label>
+                        <input id="fullname" name="họ và tên" type="text" placeholder="VD: Sơn Đặng"
+                            class="form-control">
+                        <span class="form-message invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="Gmail" type="text" placeholder="VD: email@domain.com"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numberPhone" class="form-label">Số điện thoại</label>
+                        <input id="numberPhone" name="số điện thoại" type="number" placeholder="Nhập số điện thoại"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Nhập địa chỉ</label>
+                        <input id="address" name="địa chỉ" type="text" placeholder="VD: 35/9 Phan Văn Hớn Q12 TP.HCM"
+                            class="form-control">
+                        <span class="form-message invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time" class="form-label">Chọn thời gian giao hàng</label>
+                        <input id="time" name="thời gian" type="time" class="form-control">
+                        <span class="form-message invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="option-pay" class="form-label">Chọn phương thức thanh toán</label>
+                        <select id="option-pay" name="Thanh toán" class="form-control">
+                            <option value="Thanh toán sau khi nhận hàng">Thanh toán sau khi nhận hàng</option>
+                            <option value="Chuyển khoảng">Chuyển khoảng</option>
+                        </select>
+                        <span class="form-message invalid"></span>
+                    </div>
+
+                    <button class="form-submit disabled">Xác nhận</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="status">
+            <ul class="list__status">
+                
+            </ul>
+        </div>
+
+        <div class="history__order">
+            <div class="history__container">
+                <div class="history__header">
+                    <div class="history__header-title">
+                        DANH SÁCH HÓA ĐƠN
+                    </div>
+
+                    <div class="icon__close-history-order">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div class="history__body">
+                    <ul class="list__order">
+                        <!-- <li class="item__order">
+                            <div class="item__order-title">
+                                HÓA ĐƠN 1
+                            </div>
+
+                            <ul class="list__cart-order">
+                                <li class="item__cart-order">
+                                    <div class="cart__order-img">
+                                        <img src="/img/drink_menu/cafe1.png" alt="">
+                                    </div>
+
+                                    <div class="cart__order-info">
+                                        <div class="cart__order-info-name">Cà phê đen</div>
+                                        <div class="cart__order-info-subname">Cà phê</div>
+                                        <div class="cart__order-info-price">19.000 VND</div>
+                                    </div>                                    
+
+                                    <div class="cart__order-quantity">
+                                        x 3
+                                    </div>
+                                </li>
+                                <li class="item__cart-order">
+                                    <div class="cart__order-img">
+                                        <img src="/img/drink_menu/cafe1.png" alt="">
+                                    </div>
+
+                                    <div class="cart__order-info">
+                                        <div class="cart__order-info-name">Cà phê đen</div>
+                                        <div class="cart__order-info-subname">Cà phê</div>
+                                        <div class="cart__order-info-price">19.000 VND</div>
+                                    </div>                                    
+
+                                    <div class="cart__order-quantity">
+                                        x 3
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="item__order-info">
+                                <div class="item__order-info-header">
+                                    <div class="item__order-info-title">
+                                        THÔNG TIN
+                                    </div>
+                                </div>
+                                
+                                <div class="item__order-info-content">
+                                    <div class="order__info-name mg10">
+                                        <span class="data-title">Tên</span>
+                                        <span class="data-name">: Nguyễn Minh Trí</span>
+                                    </div>
+
+                                    <div class="order__info-phone mg10">
+                                        <span class="data-title">Số điện thoại</span>
+                                        <span class="data-name">: 0398785643</span>
+                                    </div>
+
+                                    <div class="order__info-time mg10">
+                                        <span class="data-title">Thời gian</span>
+                                        <span class="data-name">: "19:30"</span>
+                                    </div>
+
+                                    <div class="order__info-status mg10">
+                                        <span class="data-title">Trạng thái</span>
+                                        <span class="data-status">: chờ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button__remove-order">
+                                <button>Hủy đơn hàng</button>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button id="scroll-to-top-button"><i class="fa-solid fa-circle-up"></i></button>
+    <script src="animation.js"></script>
+    <script src="form__handle.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
