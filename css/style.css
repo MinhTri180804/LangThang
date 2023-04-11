@@ -735,11 +735,22 @@ a {
 
 .combo__item-content .button.button--transparent-best {
     max-width: 350px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 20px auto 0px;
     font-size: 16px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s linear;
 }
 
+.combo__item-content .button.button--transparent-best:hover {
+    background-color: var(--background-item);
+    color: #fff;
+}
 /* cake */
 
 .menu__cake-section {
