@@ -417,7 +417,7 @@ a {
     width: 100%;
     height: 80vh;
     background-size: 100%;
-    background: url(/img/background.jpg);
+    background: url(../img/background.jpg);
     position: relative;
 }
 
@@ -625,7 +625,7 @@ a {
 
 .drink-coffee.drink__item::before {
     content: "";
-    background: url("/img/drink_menu/pngwing1.png");
+    background: url("../img/drink_menu/pngwing1.png");
     width: 150px;
     height: 100px;
     position: absolute;
@@ -638,7 +638,7 @@ a {
 
 .drink-coffee.drink__item::after {
     content: "";
-    background: url("/img/drink_menu/pngwing2.png");
+    background: url("../img/drink_menu/pngwing2.png");
     background-repeat: no-repeat;
     width: 150px;
     height: 100px;
@@ -714,7 +714,7 @@ a {
 
 .combo__item-content {
     padding: 30px;
-    background: url("/img/background.jpg");
+    background: url("../img/background.jpg");
     border-radius: 25px;
     text-align: justify;
 }
@@ -751,7 +751,7 @@ a {
 
 .advantage-section {
     width: 100%;
-    background: url("/img/background.jpg");
+    background: url("../img/background.jpg");
     padding: 100px 0px;
 }
 
@@ -892,7 +892,7 @@ a {
 }
 
 .author-section {
-    background: url("/img/background.jpg");
+    background: url("../img/background.jpg");
     width: 100%;
     padding: 100px 0px;
 }
@@ -1002,7 +1002,7 @@ a {
 .slogan-section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #161311 0%, rgba(22, 19, 17, 0) 22.09%), url("/img/background2.png"), #161616;
+    background: linear-gradient(180deg, #161311 0%, rgba(22, 19, 17, 0) 22.09%), url("../img/background2.png"), #161616;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
